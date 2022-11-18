@@ -1,0 +1,141 @@
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/carrinho.css">
+    <link rel="stylesheet" href="CSS/style.css">
+  <title>Carrinho</title>
+</head>
+
+<body>
+  <header class="area-cabecalho">
+      
+    <div class="navbar-area">
+      <div class="container-cabecalho">
+        <nav class="site-navbar">
+          
+          <a href="index.html" class="site-logo">Maua Restaurant</a>
+  
+          
+          <ul>
+            <li><a href="index.html#about-us">sobre nós</a></li>
+            <li><a href="index.html#fcf-form">contate-nos</a></li>
+            <li><a href="carrinho.html">carrinho</a></li>
+            <li><a href="login.html">login</a></li>
+            </ul>
+  
+          
+          <button class="nav-toggler">
+            <span></span>
+          </button>
+        </nav>
+      </div>
+    </div>  
+  </header>
+
+  <main>
+    <div class="basket">
+      <div class="basket-module">
+        <label for="promo-code">Insira um código promocinal</label>
+        <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
+        <button class="promo-code-cta">Aplicar</button>
+      </div>
+      <div class="basket-labels">
+        <ul>
+          <li class="item item-heading">Item</li>
+          <li class="preco">Preço</li>
+          <li class="quantity">Quantidade</li>
+          <li class="subtotal">Sub-total</li>
+        </ul>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image" onClick="location.href='personaliza.html'">
+            <img src="images/penne-pasta-in-tomato-sauce-with-chicken-and-tomatoes-on-a-wooden-table.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity">1</span> x Macarrão com molho</strong></h1>
+            <p>Número do produto - 7</p>
+          </div>
+        </div>
+        <div class="preco">20.00</div>
+        <div class="quantity">
+          <input type="number" value="1" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">20.00</div>
+        <div class="remove">
+          <button>Remover</button>
+        </div>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image" onClick="location.href='personalizaBL.html'">
+            <img src="images/bololeite.png" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity">1</span> Bolo de leite</strong></h1>
+            <p>Número do produto - 4</p>
+          </div>
+        </div>
+        <div class="preco">26.00</div>
+        <div class="quantity">
+          <input type="number" value="1" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">26.00</div>
+        <div class="remove">
+          <button>Remover</button>
+        </div>
+      </div>
+    </div>
+    <aside>
+      <div class="summary">
+        <div class="summary-total-items"><span class="total-items"></span> Itens na sacola</div>
+        <div class="summary-subtotal">
+          <div class="subtotal-title">Sub-total</div>
+          <div class="subtotal-value final-value" id="basket-subtotal">46.00</div>
+          <div class="summary-promo hide">
+            <div class="promo-title">Promoção</div>
+            <div class="promo-value final-value" id="basket-promo"></div>
+          </div>
+        </div>
+        <div class="summary-delivery">
+          <select name="delivery-collection" class="summary-delivery-selection">
+            <option value="0" selected="selected">Forma de entrega</option>
+            <option value="collection">Motorista IFood</option>
+            <option value="first-class">Motorista Uber Eats</option>
+            <option value="second-class">Motorista do Happi</option>
+            <option value="signed-for">Motorista do próprio restaurante</option>
+          </select>
+        </div>
+        <div class="summary-total">
+          <div class="total-title">Total</div>
+          <div class="total-value final-value" id="basket-total">46.00</div>
+        </div>
+        <div class="summary-checkout">
+          <a href="pagamento.html"><button class="checkout-cta">Ir para pagamento</button></a>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

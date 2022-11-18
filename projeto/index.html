@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Maua Restaurant</title>
+        <script
+            src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+            crossorigin="anonymous"></script>
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+            rel="stylesheet"/>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+        <link
+            href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            rel="stylesheet"
+            id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <link
+            rel='stylesheet'
+            href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+            crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body>
+
+        <!-- cabecalho -->
+        <header class="area-cabecalho">
+      
+            <div class="navbar-area">
+              <div class="container-cabecalho">
+                <nav class="site-navbar">
+                  
+                  <a href="index.html" class="site-logo">Maua Restaurant</a>
+          
+                  
+                  <ul>
+                    <li><a href="index.html#about-us">sobre nós</a></li>
+                    <li><a href="index.html#fcf-form">contate-nos</a></li>
+                    <li><a href="carrinho.html">carrinho</a></li>
+                    <li><a href="login.html">login</a></li>
+                  </ul>
+          
+                  
+                  <button class="nav-toggler">
+                    <span></span>
+                  </button>
+                </nav>
+              </div>
+            </div>  
+          </header>
+
+        <!-- menu -->
+        <div class="container">
+            <div class="nav-telacheia">
+                <ul class="nav-telacheia__itens">
+                    <li class="nav-telacheia__item">
+                        <a href="pratos.html">Pratos Principais</a>
+                    </li>
+                    <li class="nav-telacheia__item">
+                        <a href="lanches.html">Lanches</a>
+                    </li>
+                    <li class="nav-telacheia__item">
+                        <a href="bebidas.html">Bebidas</a>
+                    </li>
+                    <li class="nav-telacheia__item">
+                        <a href="sobremes.html">Sobremesas</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu menu--passos">
+                <div class="menu__linha"></div>
+                <div class="menu__linha"></div>
+                <div class="menu__linha"></div>
+            </div>
+        </div>
+
+        <!-- carrocel comidas mais pedidas -->
+        <section id="alta">
+            <div class="container">
+                <h3 class="text-center section-subTitulo">- Pedidos Populares -</h3>
+                <h1 class="text-center section-Titulo">Pratos mais pedidos</h1>
+            </div>
+            <div class="container">
+                <div class="swiper alta-slider">
+                    <div class="swiper-wrapper">
+                        <!-- Começo 1 -->
+                        <div class="swiper-slide alta-slide" onClick="location.href='personaliza.html'">
+                            <div class="alta-slide-img">
+                                <img
+                                    src="images/penne-pasta-in-tomato-sauce-with-chicken-and-tomatoes-on-a-wooden-table.jpg"
+                                    alt="Comida 1">
+                            </div>
+                            <div class="alta-slide-conteudo">
+                                <h1 class="preco-comida">R$19,90</h1>
+                                <div class="alta-slide-conteudo-baixo">
+                                    <h2 class="nome-comida">
+                                        Macarrão
+                                    </h2>
+                                    <h3 class="avaliacao-comida">
+                                        <span>4.7</span>
+                                        <div class="avaliacao">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Fim 1 -->
+                        <!-- Começo 2 -->
+                        <div class="swiper-slide alta-slide" onClick="location.href='personalizaAlm.html'">
+                            <div class="alta-slide-img">
+                                <img 
+                                    src="images/comida-2.jpg" 
+                                    alt="Comida 2">
+                            </div>
+                            <div class="alta-slide-conteudo">
+                                <h1 class="preco-comida">R$19,90</h1>
+                                <div class="alta-slide-conteudo-baixo">
+                                    <h2 class="nome-comida">
+                                        Almondegas
+                                    </h2>
+                                    <h3 class="avaliacao-comida">
+                                        <span>4.5</span>
+                                        <div class="avaliacao">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fim 2 -->
+                        <!-- Começo 3 -->
+                        <div class="swiper-slide alta-slide">
+                            <div class="alta-slide-img">
+                                <img src="images/lanche1.jpg" alt="Comida 3">
+                            </div>
+                            <div class="alta-slide-conteudo">
+                                <h1 class="preco-comida">R$29,99</h1>
+                                <div class="alta-slide-conteudo-baixo">
+                                    <h2 class="nome-comida">
+                                        Super cheedar crispy
+                                    </h2>
+                                    <h3 class="avaliacao-comida">
+                                        <span>4.4</span>
+                                        <div class="avaliacao">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Fim 4 -->
+                        <!-- Começo 5 -->
+                        
+                        <!-- Fim 5 -->
+                        <!-- Começo 6 -->
+                        <div class="swiper-slide alta-slide">
+                            <div class="alta-slide-img">
+                                <img src="images/sorvete flocos.jpg" alt="Comida 6">
+                            </div>
+                            <div class="alta-slide-conteudo">
+                                <h1 class="preco-comida">R$8,90</h1>
+                                <div class="alta-slide-conteudo-baixo">
+                                    <h2 class="nome-comida">
+                                        Sorvete Flocos
+                                    </h2>
+                                    <h3 class="avaliacao-comida">
+                                        <span>4.3</span>
+                                        <div class="avaliacao">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fim 6 -->
+
+                    </div>
+
+                    <div class="alta-slider-control">
+                        <div class="swiper-button-prev slider-arrow">
+                            <ion-icon name="arrow-back-outline"></ion-icon>
+                        </div>
+                        <div class="swiper-button-next slider-arrow">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- sobre-nós -->
+
+        <section class="about-us py-5 " id="about-us">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class='bem-vindo'>Bem-vindo!</h1>
+                        <h2>Saiba um pouco mais sobre-nós</h2>
+                        <hr>
+                        <p>Abertos no final de 2022, o nosso restaurante vem como uma proposta de
+                            agilizar o processo do cliente pedir e esperar sua refeição chegar à sua casa,
+                            de uma maneira que a comida chegue quente, bem embalada e no tempo estimável.</p>
+                        <p>O restaurante conta com um cardápio bem variado, apresentando como sua maior
+                            força os lanches tradicionais, também possuimos como prato principal, massas e
+                            tacos. Além dos tradicionais pratos principais, a sobremesa não poderia faltar,
+                            contando com diversos tipos de bolos e sorvetes. Para finalizar, oferecemos as
+                            maiores variedades de bebidas, sendo elas alcoólicas, sucos, refrigerantes, chás
+                            e águas, todas das melhores marcas do mercado.</p>
+                        <button type="button" class="btn btn-sobre">
+                            <a href="cardapio.html">Veja nosso cardápio</button>
+                        </a>
+
+                    </div>
+                    <div class="col-md-6">
+                        <img
+                            src="images/restaurant-interior.jpg"
+                            alt="Imagem"
+                            class="imagem-sobre">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+
+            <h1 class="title m-2">Comentários de clientes</h1>
+
+            <div class="swiper reviews-slider">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide slide">
+                        <img src="images/usuario2.webp" alt="">
+                        <p>Comidas muito boas e de rápida entrega.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>Genilson Castro</h3>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <img src="images/usuario.jpg" alt="">
+                        <p>Um dos restaurantes mais baratos que eu já efetuei o pedido, além da comida e
+                            do atendimento ser maravilhoso.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>Osmar Nicacio</h3>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <img src="images//usuario3.jpg" alt="">
+                        <p>Comidas muito saborosas que são entregues no tempo estimado, sem nenhum
+                            atraso e muito bem embaladas.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>Kaue Alan</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+    <!-- contate-nos -->
+    <div class="fcf-body">
+
+        <div id="fcf-form">
+            <h3 class="fcf-h3">Contate-nos</h3>
+
+            <form
+                id="fcf-form-id"
+                class="fcf-form-class"
+                method="post"
+                action="contact-form-process.php">
+
+                <div class="fcf-form-group">
+                    <label for="Name" class="fcf-label">Nome</label>
+                    <div class="fcf-input-group">
+                        <input
+                            type="text"
+                            id="Name"
+                            name="Name"
+                            class="fcf-form-control"
+                            required="required">
+                    </div>
+                </div>
+
+                <div class="fcf-form-group">
+                    <label for="Email" class="fcf-label">E-mail</label>
+                    <div class="fcf-input-group">
+                        <input
+                            type="email"
+                            id="Email"
+                            name="Email"
+                            class="fcf-form-control"
+                            required="required">
+                    </div>
+                </div>
+
+                <div class="fcf-form-group">
+                    <label for="Message" class="fcf-label">Mensagem</label>
+                    <div class="fcf-input-group">
+                        <textarea
+                            id="Message"
+                            name="Message"
+                            class="fcf-form-control"
+                            rows="6"
+                            maxlength="3000"
+                            required="required"></textarea>
+                    </div>
+                </div>
+
+                <div class="fcf-form-group">
+                    <button
+                        type="submit"
+                        id="fcf-button"
+                        class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Envie a mensagem</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- rodapé -->
+    <footer class="rodape">
+
+        <div class="container">
+            <div class="row p-3">
+                <div class="algo col-md-3">
+                    <span class="logo">
+                        <h2>Maua Restaurant</h2>
+                    </span>
+
+                </div>
+
+                <div class="textos-esquerda col-md-3">
+                    <ul>
+                        <li class="sc">
+                            <a href="index.html#about-us">Sobre nós</a>
+                        </li>
+                        <li class="sc">
+                            <a href="#">Telefone: (11) 4423-9843</a>
+                        </li>
+                        <li>Praça Mauá, 1 - Mauá, São Caetano do Sul - SP, 09580-900</li>
+                    </ul>
+                </div>
+
+                <div class="textos-direita col-md-6">
+                    <div class="wrapper">
+                        <a href="#" class="icon facebook">
+                            <div class="tooltip">Facebook</div>
+                            <span>
+                                <i class="fab fa-facebook-f"></i>
+                            </span>
+                        </a>
+                        <a href="#" class="icon twitter">
+                            <div class="tooltip">Twitter</div>
+                            <span>
+                                <i class="fab fa-twitter"></i>
+                            </span>
+                        </a>
+                        <a href="#" class="icon instagram">
+                            <div class="tooltip">Instagram</div>
+                            <span>
+                                <i class="fab fa-instagram"></i>
+                            </span>
+                        </a>
+                        <a href="#" class="icon whatsapp">
+                            <div class="tooltip">WhatsApp</div>
+                            <span>
+                                <i class="fab fa-whatsapp"></i>
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <p class="copy">&copy; Todos os direitos reservados.</p>
+
+    <!-- scripts -->
+    <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+        nomodule="nomodule"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

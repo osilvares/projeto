@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-image: url('https://blog.consumer.com.br/wp-content/uploads/2020/11/culinária-regional-brasileira.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+}
+.return-button{
+    display: flex;
+    align-items: left;
+    padding-right: 89%;
+    padding-top: 0;
+    
+}
+
+.return-button button{
+    border: none;
+    /* background-color: #6c63ff; */
+    background-color:#ec994b ; 
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.return-button button:hover{
+    /* background-color: #6b63fff1; */
+    background-color:#bb8756 ;
+}
+
+.return-button button a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.fa-facebook-square{
+    color: blue;
+}
+
+.fa-google-plus-square{
+    color:red;
+}
+
+.fa-twitter-square{
+    color: #1DA1F2;
+}
+
+.fa-facebook-square:hover{
+    color: white;
+}
+
+.fa-google-plus-square:hover{
+    color:white;
+}
+
+.fa-twitter-square:hover{
+    color: white;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+margin-top: 30px;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #ec994b;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #ec994b;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: #bb8756;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
